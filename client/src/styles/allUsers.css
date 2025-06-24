@@ -1,0 +1,61 @@
+.all-users-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 13vh 3vw 5vh 3vw;
+    background: linear-gradient(45deg, rgba(10, 26, 38, 0.6), rgba(18, 28, 38, 0.6)), url('../assets/AllUsers.png') no-repeat;
+}
+
+.all-users-page h2 {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Users Container */
+.all-users {
+    width: 90%;
+    max-height: 40vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-right: 1vw;
+}
+
+.all-users::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual User Card */
+.all-users .user {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 0.8rem;
+    display: flex;
+    padding: 2vh 2vw;
+    gap: 2vw;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.all-users .user:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Styling */
+.all-users .user p {
+    margin: 0;
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+.all-users .user p b {
+    font-weight: 600;
+    color: #000000;
+}
